@@ -12,3 +12,5 @@ to decrypting your own individual pieces of ciphertext, you must work individual
 without help from anyone else.
 Brute-force methods are not ruled out; however, you may find the assessment more
 rewarding if you introduce an analytical component into your decryption tactics.
+
+_Extract from assignment brief_
