@@ -17,7 +17,7 @@ rewarding if you introduce an analytical component into your decryption tactics.
 
 ##### Exercise 1 (2 marks)
 The plaintext comes from tess26.txt and is encoded with a Caesar cipher.
-Exercise 2 (3 marks)
+##### Exercise 2 (3 marks)
 The plaintext comes from tess26.txt and is encoded with a Vigenere cipher using
 the 21-letter key TESSOFTHEDURBERVILLES.
 ##### Exercise 3 (4 marks)
