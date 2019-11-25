@@ -1,3 +1,5 @@
+#### CO634 Cryptography Assignment 
+##### Introduction
 This assessment comprises seven exercises, unimaginatively called Exercise 1 to
 Exercise 7. For each exercise you will be given an extract from Thomas Hardy's
 novel Tess of the d'Urbervilles (first published in 1891), encrypted with one of the
@@ -13,4 +15,33 @@ without help from anyone else.
 Brute-force methods are not ruled out; however, you may find the assessment more
 rewarding if you introduce an analytical component into your decryption tactics.
 
-_Extract from assignment brief_
+##### Exercise 1 (2 marks)
+The plaintext comes from tess26.txt and is encoded with a Caesar cipher.
+Exercise 2 (3 marks)
+The plaintext comes from tess26.txt and is encoded with a Vigenere cipher using
+the 21-letter key TESSOFTHEDURBERVILLES.
+##### Exercise 3 (4 marks)
+The plaintext comes from tess26.txt and is encoded with a Vigenere cipher. The
+key is an arbitrary sequence of six letters (i.e. not necessarily forming an English
+word).
+##### Exercise 4 (5 marks)
+The plaintext comes from tess26.txt and is encoded with a Vigenere cipher. The
+key is an arbitrary sequence of between 4 and 6 letters.
+##### Exercise 5 (5 marks)
+The plaintext comes from tess26.txt and is encoded with a transposition cipher,
+as follows: the plaintext is written row-wise across a certain number of columns, 
+between 4 and 6. (You must figure out how many columns were used.) The
+ciphertext is formed by reading out successive columns from left to right.
+##### Exercise 6 (5 marks)
+The plaintext comes from tess26.txt and is encoded with a transposition cipher,
+as follows: the plaintext is written row-wise across six columns. The ciphertext is
+formed by reading out successive columns in an arbitrary order (which you must
+figure out to decipher the message). Hint:look for common pairs of letters, such as
+'th'.
+##### Exercise 7 (6 marks)
+The plaintext comes from tess27.txt and is encoded with a general substitution
+cipher, using a randomly chosen mapping from the 27-character alphabet onto
+itself. Note that normally (i.e. except by chance) a vertical bar will be mapped
+onto some other letter of the alphabet.
+
+_Extract from assignment brief written by _
