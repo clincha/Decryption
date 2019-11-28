@@ -30,7 +30,10 @@ The plaintext comes from tess26.txt and is encoded with a Vigenere cipher using
 the 21-letter key TESSOFTHEDURBERVILLES.
 
 ##### Solution
-
+Map each letter in the key and the cipher text to their respective number.
+Minus each letter value from the cipher text with each value in the key, 
+looping to the end of the alphabet (26) when the value reaches the start of the
+alphabet (0). 
 ##### Exercise 3 (4 marks)
 The plaintext comes from tess26.txt and is encoded with a Vigenere cipher. The
 key is an arbitrary sequence of six letters (i.e. not necessarily forming an English

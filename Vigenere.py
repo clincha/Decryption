@@ -1,31 +1,17 @@
-ENCRYPTED = "TRMFQTGZGLIEBFCZBTXIXTVDGBLXYX"
-KEY = "TESSOFTHEDURBERVILLES"
+ENCRYPTED = [ord(i) for i in "TRMFQTGZGLIEBFCZBTXIXTVDGBLXYX"]
+KEY = [ord(i) for i in "TESSOFTHEDURBERVILLES"]
 KEY_LENGTH = len(KEY)
 LETTER_OFFSET = 65
-TESS_26 = open("data/tess26.txt", "r").readline()
+TESS26 = open("data/tess26.txt", "r").readline()
 
+decrypted = "".join([
+    chr(ENCRYPTED[index] - KEY[index % KEY_LENGTH] + LETTER_OFFSET + 26)
+    if ENCRYPTED[index] - KEY[index % KEY_LENGTH] < 0 else
+    chr(ENCRYPTED[index] - KEY[index % KEY_LENGTH] + LETTER_OFFSET)
+    for index in range(len(ENCRYPTED))
+])
 
-done = False
-keyIndex = 0
-decrypted = ""
-
-for letter in ENCRYPTED:
-
-    newLetter = ord(letter) - ord(KEY[keyIndex])
-
-    if newLetter < 0:
-        newLetter = newLetter + 26 + LETTER_OFFSET
-    else:
-        newLetter = newLetter + LETTER_OFFSET
-
-    decrypted += chr(newLetter)
-
-    if keyIndex == (KEY_LENGTH - 1):
-        keyIndex = 0
-    else:
-        keyIndex = keyIndex + 1
-
-if decrypted in TESS_26:
-    print(decrypted)
+if decrypted in TESS26:
+    print("It's been decrypted! Text is: " + decrypted)
 else:
-    print("failed")
+    print("Decryption failed!  Text is: " + decrypted)
