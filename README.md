@@ -34,14 +34,24 @@ Map each letter in the key and the cipher text to their respective number.
 Minus each letter value from the cipher text with each value in the key, 
 looping to the end of the alphabet (26) when the value reaches the start of the
 alphabet (0). 
-##### Exercise 3 (4 marks)
+#### Exercise 3 (4 marks)
+##### Problem
 The plaintext comes from tess26.txt and is encoded with a Vigenere cipher. The
 key is an arbitrary sequence of six letters (i.e. not necessarily forming an English
 word).
-##### Exercise 4 (5 marks)
+
+##### Solution
+Check the letter frequency for each letter in the cipher text. Break the cipher text into 6 sections,
+one for every sixth letter starting at the first to sixth letter. Perform letter frequency analysis
+on each of the sections. It's likely that the key is the amount of steps from the cipher text's most
+frequent letter to each sections most frequent letter. Move each section the amount of steps
+that the frequent letter moved. This failed so I needed to move one letter to the second most 
+frequent letter.
+
+#### Exercise 4 (5 marks)
 The plaintext comes from tess26.txt and is encoded with a Vigenere cipher. The
 key is an arbitrary sequence of between 4 and 6 letters.
-##### Exercise 5 (5 marks)
+#### Exercise 5 (5 marks)
 The plaintext comes from tess26.txt and is encoded with a transposition cipher,
 as follows: the plaintext is written row-wise across a certain number of columns, 
 between 4 and 6. (You must figure out how many columns were used.) The
