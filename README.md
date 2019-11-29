@@ -24,6 +24,14 @@ I decided to use the brute force technique. The code increments each letter in t
 and then checks if that string is in tess26. If not, then increment each letter again until the 
 string is found in the text.
 
+###### Decrypted text
+ZEDWHATWASTOBETHEINSCRIPTIONHEWASNOWHALFWAYTHROUGHTHOUSHALTNOTCOMMITHERCHEERFULFRIENDSAWHERLOOKINGSTOPPEDHISBRUSHANDSHOUTEDIFYOUWANTTOASKFOREDIFICATIONONTHESETHINGSOFMOMENTTHERESAVERYEARNESTGOODMANGOINGTOPREACHACHARITYSERMONTODAYINTHEPARISHYOUAREGOINGTOMRCLAREOFEMMINSTERIMNOTOFHISPERSUASIONNOWBUTHESAGOODMANANDHELLEXPOUNDASWELLASANYPARSONIKNOWTWASHEBEGANTHEWORKINMEBUTTESSDIDNOTANSWERSHETHROBBINGLYRESUMEDHERWALKHEREYESFIXEDONTHEGROUNDPOOHIDONTBELIEVEGODSAIDSUCHTHINGSSHEMURMUREDCONTEMPTUOUSLYWHENHERFLUSHHADDIEDAWAYAPLUMEOFSMOKESOAREDUPSUDDENLYFROMHERFATHERSCHIMNEYTHESIGHTOFWHICHMADEHERHEARTACHETHEASPECTOFTHEINTERIORWHENSHEREACHEDITMADEHERHEARTACHEMOREHERMOTHERWHOHADJUSTCOMEDOWNSTAIRSTURNEDTOGREETHERFROMTHEFIREPLACEWHERESHEWASKINDLINGBARKEDOAKTWIGSUNDERTHEBREAKFASTKETTLETHEYOUNGCHILDRENWERESTILLABOVEASWASALSOHERFATHERITBEINGSUNDAYMO
+
+###### Key
+19
+
+---
+
 #### Exercise 2 (3 marks)
 ##### Problem
 The plaintext comes from tess26.txt and is encoded with a Vigenere cipher using
@@ -34,6 +42,15 @@ Map each letter in the key and the cipher text to their respective number.
 Minus each letter value from the cipher text with each value in the key, 
 looping to the end of the alphabet (26) when the value reaches the start of the
 alphabet (0). 
+
+###### Decrypted text
+ANUNCONSCIONABLETIMEFARLONGERT
+
+###### Key
+TESSOFTHEDURBERVILLES
+
+---
+
 #### Exercise 3 (4 marks)
 ##### Problem
 The plaintext comes from tess26.txt and is encoded with a Vigenere cipher. The
@@ -48,24 +65,64 @@ frequent letter to each sections most frequent letter. Move each section the amo
 that the frequent letter moved. This failed so I needed to move one letter to the second most 
 frequent letter.
 
+###### Decrypted text
+ELOSSHERBABYHADNOTBEENBAPTIZEDTESSHADDRIFTEDINTOAFRAMEOFMINDWHICHACCEPTEDPASSIVELYTHECONSIDERATIONTHATIFSHESHOULDHAVETOBURNFORWHATSHEHADDONEBURNSHEMUSTANDTHEREWASANENDOFITLIKEALLVILLAGEGIRLSSHEWASWELLGROUNDEDINTHEHOLYSCRIPTURESANDHADDUTIFULLYSTUDIEDTHEHISTORIESOFAHOLAHANDAHOLIBAHANDKNEWTHEINFERENCESTOBEDRAWNTHEREFROMBUTWHENTHESAMEQUESTIONAROSEWITHREGARDTOTHEBABYITHADAVERYDIFFERENTCOLOURHERDARLINGWASABOUTTODIEANDNOSALVATIONITWASNEARLYBEDTIMEBUTSHERUSHEDDOWNSTAIRSANDASKEDIFSHEMIGHTSENDFORTHEPARSONTHEMOMENTHAPPENEDTOBEONEATWHICHHERFATHERSSENSEOFTHEANTIQUENOBILITYOFHISFAMILYWASHIGHESTANDHISSENSITIVENESSTOTHESMUDGEWHICHTESSHADSETUPONTHATNOBILITYMOSTPRONOUNCEDFORHEHADJUSTRETURNEDFROMHISWEEKLYBOOZEATROLLIVERSINNNOPARSONSHOULDCOMEINSIDEHISDOORHEDECLAREDPRYINGINTOHISAFFAIRSJUSTTHENWHENBYHERSHAMEITHADBECOMEMORENECESSARYTHANEVERTOHIDETHEMH
+
+###### Key
+PMCPIB
+
+---
+
 #### Exercise 4 (5 marks)
+##### Problem
 The plaintext comes from tess26.txt and is encoded with a Vigenere cipher. The
 key is an arbitrary sequence of between 4 and 6 letters.
+
+##### Solution
+
+###### Decrypted text
+
+###### Key
+
+---
 #### Exercise 5 (5 marks)
+##### Problem
 The plaintext comes from tess26.txt and is encoded with a transposition cipher,
 as follows: the plaintext is written row-wise across a certain number of columns, 
 between 4 and 6. (You must figure out how many columns were used.) The
 ciphertext is formed by reading out successive columns from left to right.
+
+##### Solution
+
+###### Decrypted text
+
+###### Key
+
+---
 ##### Exercise 6 (5 marks)
+##### Problem
 The plaintext comes from tess26.txt and is encoded with a transposition cipher,
 as follows: the plaintext is written row-wise across six columns. The ciphertext is
 formed by reading out successive columns in an arbitrary order (which you must
 figure out to decipher the message). Hint:look for common pairs of letters, such as
 'th'.
+
+##### Solution
+
+###### Decrypted text
+
+###### Key
+
+---
 ##### Exercise 7 (6 marks)
+##### Problem
 The plaintext comes from tess27.txt and is encoded with a general substitution
 cipher, using a randomly chosen mapping from the 27-character alphabet onto
 itself. Note that normally (i.e. except by chance) a vertical bar will be mapped
 onto some other letter of the alphabet.
 
-_Extract from assignment brief written by _
+##### Solution
+
+###### Decrypted text
+
+###### Key
