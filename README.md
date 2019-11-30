@@ -79,6 +79,29 @@ The plaintext comes from tess26.txt and is encoded with a Vigenere cipher. The
 key is an arbitrary sequence of between 4 and 6 letters.
 
 ##### Solution
+I took the cipher text and I looked at the most frequent letters in the text: 'E', 'T', 'A', 'O', 'H', 'N'
+
+I then broke the cipher text into four sections. 
+I did this by taking every fourth letter and putting them together as follows:
+
+Cipher text: ABCDEFGH
+
+Sections: [A,E] [B,F] [C,G] [C,H]
+
+I then found the most common letters in each of those segments
+
+I found the difference between the most common letters of the cipher text and the most common letters of the segments.
+I then shifted each letter in that section by that difference and then reassembled the text by putting each letter in
+it's original space.
+
+I did this process for every 4 letter, 5 letter and 6 letter key length
+
+The five letter key seemed to work the best. I could see English letters forming but they were broken up slightly.
+I tweaked the key by moving each letter to the second most common letter in that segment and looking again I repeated
+that process until I had a piece from the text. 
+
+I tried to automate the entire process by code but I struggled with checking the less frequent characters, given more 
+time I would have liked to completely automate this. 
 
 ###### Decrypted text
 QUENTTOTHEIRWEDDINGDAYTHEGLOOMYINTERVENINGTIMESEEMEDTOSINKINTOCHAOSOVERWHICHTHEPRESENTANDPRIORTIMESCLOSEDASIFITNEVERHADBEENWHENEVERHESUGGESTEDTHATTHEYSHOULDLEAVETHEIRSHELTERANDGOFORWARDSTOWARDSSOUTHAMPTONORLONDONSHESHOWEDASTRANGEUNWILLINGNESSTOMOVEWHYSHOULDWEPUTANENDTOALLTHATSSWEETANDLOVELYSHEDEPRECATEDWHATMUSTCOMEWILLCOMEANDLOOKINGTHROUGHTHESHUTTERCHINKALLISTROUBLEOUTSIDETHEREINSIDEHERECONTENTHEPEEPEDOUTALSOITWASQUITETRUEWITHINWASAFFECTIONUNIONERRORFORGIVENOUTSIDEWASTHEINEXORABLEANDANDSHESAIDPRESSINGHERCHEEKAGAINSTHISIFEARTHATWHATYOUTHINKOFMENOWMAYNOTLASTIDONOTWISHTOOUTLIVEYOURPRESENTFEELINGFORMEIWOULDRATHERNOTIWOULDRATHERBEDEADANDBURIEDWHENTHETIMECOMESFORYOUTODESPISEMESOTHATITMAYNEVERBEKNOWNTOMETHATYOUDESPISEDMEICANNOTEVERDESPISEYOUIALSOHOPETHATBUTCONSIDERINGWHATMYLIFEHASBEENICANNOTSEEWHYANYMANSHOULDSOONERORLATERBEABLETOHELPDE
