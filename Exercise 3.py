@@ -16,11 +16,7 @@ mostCommonLettersInEachSegment = [counter.most_common()[0][0] for counter in cou
 # Currently a hack so that I can finish the rest of the exercises
 mostCommonLettersInEachSegment[3] = "P"
 
-print(mostCommonLettersInEachSegment)
-
 steps = [ord("E") - ord(commonLetter) for commonLetter in mostCommonLettersInEachSegment]
-
-print(steps)
 
 decrypted = [CipherUtils.incrementer(sameLetterSegments[x], steps[x]) for x in range(len(steps))]
 
