@@ -153,6 +153,8 @@ itself. Note that normally (i.e. except by chance) a vertical bar will be mapped
 onto some other letter of the alphabet.
 
 ##### Solution
+I completed the first try but it doesn't look like the space is in the right place. I'd expect to see it every
+6-10 characters but it's very sporadic. Y looks like a great candidate for the space though. 
 
 ###### Decrypted text
 
