@@ -8,6 +8,7 @@ ENCRYPTED = "YLRTLBDYLORSVDRDJRHLLFRDYLQORZYJLZRBSJALRDYLRMVEWYRJGRDYLRSBODJKRLB
 TESS27 = open("data/tess27.txt").readline()
 
 tessMostCommon = Counter(TESS27).most_common()
+tessMostCommonWords = Counter(TESS27.split("|")).most_common()
 encryptedMostCommon = Counter(ENCRYPTED).most_common()
 
 print(tessMostCommon)
@@ -18,8 +19,10 @@ for index in range(len(ALPHABET)):
     replacements[encryptedMostCommon[index][0]] = tessMostCommon[index][0]
 
 replacements["D"] = "T"
+replacements["B"] = "O"
+
 replacements["Y"] = "H"
-replacements["L"] = "E"
+replacements["S"] = "A"
 
 print(replacements)
 
@@ -27,9 +30,10 @@ decrypted = CipherUtils.replace(ENCRYPTED, replacements)
 
 words = decrypted.split("|")
 words = [word if len(word) < 4 else None for word in words]
+print(tessMostCommonWords)
 print(Counter(words).most_common())
 
-if "||" in  decrypted:
+if "||" in decrypted:
     print("Double bars")
 
 if decrypted in TESS27:
