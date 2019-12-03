@@ -11,13 +11,11 @@ tessMostCommon = Counter(TESS27).most_common()
 tessMostCommonWords = Counter(TESS27.split("|")).most_common()
 encryptedMostCommon = Counter(ENCRYPTED).most_common()
 
-# print(tessMostCommon)
-# print(encryptedMostCommon)
-
 replacements = {}
 for index in range(len(ALPHABET)):
     replacements[encryptedMostCommon[index][0]] = tessMostCommon[index][0]
 
+print(replacements)
 
 replacements["B"] = "A"
 replacements["Y"] = "T"
@@ -70,13 +68,10 @@ replacements["U"] = "X"
 print(replacements)
 
 decrypted = CipherUtils.replace(ENCRYPTED, replacements)
-
 words = decrypted.split("|")
+
 print(tessMostCommonWords)
 print(Counter(words).most_common())
-
-if "||" in decrypted:
-    print("Double bars")
 
 if decrypted in TESS27:
     print("It's been decrypted! Text is: " + decrypted)

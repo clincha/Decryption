@@ -15,49 +15,68 @@ without help from anyone else.
 Brute-force methods are not ruled out; however, you may find the assessment more
 rewarding if you introduce an analytical component into your decryption tactics.
 
-#### Exercise 1 (2 marks)
-##### Problem
+_Extract from assignment brief, written by [Carlos Perez-Delgado](https://www.cs.kent.ac.uk/people/staff/cd472/)
+
+##### Reflection
+- I came into the problem trying to program too much of it straight away
+- Python was a good choice
+- Improving my time management skills
+- Gained a good understanding of the lecture material
+- I enjoyed the assignment, the challenge was interesting
+- I find it difficult to communicate what code is doing
+
+I obsessed about getting one intricate nested loop working which slowed me down during exercise 3. 
+I already had the answer but I wanted to make the code do everything. This didn't work and I gave up before I could 
+do it. It made me exhausted working on it and demotivated me for the next part of the assignment. 
+I should have stopped when I had the correct answer and moved on. This is the same as getting an MVP done, 
+you need to just get the smallest thing working before perfecting one part. Once the whole system functions, it's easy
+to improve it then.
+
+I really enjoyed working with Python, I think that it makes it a lot easier to understand what the code is doing. 
+It would be interesting to do this project with a functional language like Haskell. I'd also be interested in seeing the
+code that generates the assignment data. Working in a newish language when trying to do something challenging was quite
+hard at times but it did make me understand Python better. 
+
+---
+### Exercise 1 (2 marks)
+#### Problem
 The plaintext comes from tess26.txt and is encoded with a Caesar cipher.
 
-##### Solution
-I decided to use the brute force technique. The code increments each letter in the cipher text 
-and then checks if that string is in tess26. If not, then increment each letter again until the 
-string is found in the text.
+#### Solution
+I just brute forced the text, it's quick for a computer to do for such a small range. 
+The code increments each letter in the cipher text and then checks if that string is in tess26. 
+If not, then increment each letter again until the string is found in the text.
 
-###### Decrypted text
+##### Decrypted text
 ZEDWHATWASTOBETHEINSCRIPTIONHEWASNOWHALFWAYTHROUGHTHOUSHALTNOTCOMMITHERCHEERFULFRIENDSAWHERLOOKINGSTOPPEDHISBRUSHANDSHOUTEDIFYOUWANTTOASKFOREDIFICATIONONTHESETHINGSOFMOMENTTHERESAVERYEARNESTGOODMANGOINGTOPREACHACHARITYSERMONTODAYINTHEPARISHYOUAREGOINGTOMRCLAREOFEMMINSTERIMNOTOFHISPERSUASIONNOWBUTHESAGOODMANANDHELLEXPOUNDASWELLASANYPARSONIKNOWTWASHEBEGANTHEWORKINMEBUTTESSDIDNOTANSWERSHETHROBBINGLYRESUMEDHERWALKHEREYESFIXEDONTHEGROUNDPOOHIDONTBELIEVEGODSAIDSUCHTHINGSSHEMURMUREDCONTEMPTUOUSLYWHENHERFLUSHHADDIEDAWAYAPLUMEOFSMOKESOAREDUPSUDDENLYFROMHERFATHERSCHIMNEYTHESIGHTOFWHICHMADEHERHEARTACHETHEASPECTOFTHEINTERIORWHENSHEREACHEDITMADEHERHEARTACHEMOREHERMOTHERWHOHADJUSTCOMEDOWNSTAIRSTURNEDTOGREETHERFROMTHEFIREPLACEWHERESHEWASKINDLINGBARKEDOAKTWIGSUNDERTHEBREAKFASTKETTLETHEYOUNGCHILDRENWERESTILLABOVEASWASALSOHERFATHERITBEINGSUNDAYMO
 
-###### Key
+##### Key
 19
 
 ---
-
-#### Exercise 2 (3 marks)
-##### Problem
+### Exercise 2 (3 marks)
+#### Problem
 The plaintext comes from tess26.txt and is encoded with a Vigenere cipher using
 the 21-letter key TESSOFTHEDURBERVILLES.
 
-##### Solution
+#### Solution
 Map each letter in the key and the cipher text to their respective number.
 Minus each letter value from the cipher text with each value in the key, 
-looping to the end of the alphabet (26) when the value reaches the start of the
-alphabet (0). 
+looping to the end of the alphabet (26) when the value reaches the start of the alphabet (0). 
 
-###### Decrypted text
+##### Decrypted text
 ANUNCONSCIONABLETIMEFARLONGERT
 
-###### Key
+##### Key
 TESSOFTHEDURBERVILLES
 
 ---
-
-#### Exercise 3 (4 marks)
-##### Problem
+### Exercise 3 (4 marks)
+#### Problem
 The plaintext comes from tess26.txt and is encoded with a Vigenere cipher. The
-key is an arbitrary sequence of six letters (i.e. not necessarily forming an English
-word).
+key is an arbitrary sequence of six letters (i.e. not necessarily forming an English word).
 
-##### Solution
+#### Solution
 Check the letter frequency for each letter in the cipher text. Break the cipher text into 6 sections,
 one for every sixth letter starting at the first to sixth letter. Perform letter frequency analysis
 on each of the sections. It's likely that the key is the amount of steps from the cipher text's most
@@ -65,20 +84,19 @@ frequent letter to each sections most frequent letter. Move each section the amo
 that the frequent letter moved. This failed so I needed to move one letter to the second most 
 frequent letter.
 
-###### Decrypted text
+##### Decrypted text
 ELOSSHERBABYHADNOTBEENBAPTIZEDTESSHADDRIFTEDINTOAFRAMEOFMINDWHICHACCEPTEDPASSIVELYTHECONSIDERATIONTHATIFSHESHOULDHAVETOBURNFORWHATSHEHADDONEBURNSHEMUSTANDTHEREWASANENDOFITLIKEALLVILLAGEGIRLSSHEWASWELLGROUNDEDINTHEHOLYSCRIPTURESANDHADDUTIFULLYSTUDIEDTHEHISTORIESOFAHOLAHANDAHOLIBAHANDKNEWTHEINFERENCESTOBEDRAWNTHEREFROMBUTWHENTHESAMEQUESTIONAROSEWITHREGARDTOTHEBABYITHADAVERYDIFFERENTCOLOURHERDARLINGWASABOUTTODIEANDNOSALVATIONITWASNEARLYBEDTIMEBUTSHERUSHEDDOWNSTAIRSANDASKEDIFSHEMIGHTSENDFORTHEPARSONTHEMOMENTHAPPENEDTOBEONEATWHICHHERFATHERSSENSEOFTHEANTIQUENOBILITYOFHISFAMILYWASHIGHESTANDHISSENSITIVENESSTOTHESMUDGEWHICHTESSHADSETUPONTHATNOBILITYMOSTPRONOUNCEDFORHEHADJUSTRETURNEDFROMHISWEEKLYBOOZEATROLLIVERSINNNOPARSONSHOULDCOMEINSIDEHISDOORHEDECLAREDPRYINGINTOHISAFFAIRSJUSTTHENWHENBYHERSHAMEITHADBECOMEMORENECESSARYTHANEVERTOHIDETHEMH
 
-###### Key
+##### Key
 PMCPIB
 
 ---
-
-#### Exercise 4 (5 marks)
-##### Problem
+### Exercise 4 (5 marks)
+#### Problem
 The plaintext comes from tess26.txt and is encoded with a Vigenere cipher. The
 key is an arbitrary sequence of between 4 and 6 letters.
 
-##### Solution
+#### Solution
 I took the cipher text and I looked at the most frequent letters in the text: 'E', 'T', 'A', 'O', 'H', 'N'
 
 I then broke the cipher text into four sections. 
@@ -103,59 +121,78 @@ that process until I had a piece from the text.
 I tried to automate the entire process by code but I struggled with checking the less frequent characters, given more 
 time I would have liked to completely automate this. 
 
-###### Decrypted text
+##### Decrypted text
 QUENTTOTHEIRWEDDINGDAYTHEGLOOMYINTERVENINGTIMESEEMEDTOSINKINTOCHAOSOVERWHICHTHEPRESENTANDPRIORTIMESCLOSEDASIFITNEVERHADBEENWHENEVERHESUGGESTEDTHATTHEYSHOULDLEAVETHEIRSHELTERANDGOFORWARDSTOWARDSSOUTHAMPTONORLONDONSHESHOWEDASTRANGEUNWILLINGNESSTOMOVEWHYSHOULDWEPUTANENDTOALLTHATSSWEETANDLOVELYSHEDEPRECATEDWHATMUSTCOMEWILLCOMEANDLOOKINGTHROUGHTHESHUTTERCHINKALLISTROUBLEOUTSIDETHEREINSIDEHERECONTENTHEPEEPEDOUTALSOITWASQUITETRUEWITHINWASAFFECTIONUNIONERRORFORGIVENOUTSIDEWASTHEINEXORABLEANDANDSHESAIDPRESSINGHERCHEEKAGAINSTHISIFEARTHATWHATYOUTHINKOFMENOWMAYNOTLASTIDONOTWISHTOOUTLIVEYOURPRESENTFEELINGFORMEIWOULDRATHERNOTIWOULDRATHERBEDEADANDBURIEDWHENTHETIMECOMESFORYOUTODESPISEMESOTHATITMAYNEVERBEKNOWNTOMETHATYOUDESPISEDMEICANNOTEVERDESPISEYOUIALSOHOPETHATBUTCONSIDERINGWHATMYLIFEHASBEENICANNOTSEEWHYANYMANSHOULDSOONERORLATERBEABLETOHELPDE
-###### Key
+##### Key
 GKOTK
 
 ---
-#### Exercise 5 (5 marks)
-##### Problem
+### Exercise 5 (5 marks)
+#### Problem
 The plaintext comes from tess26.txt and is encoded with a transposition cipher,
 as follows: the plaintext is written row-wise across a certain number of columns, 
 between 4 and 6. (You must figure out how many columns were used.) The
 ciphertext is formed by reading out successive columns from left to right.
 
-##### Solution
+#### Solution
 I looped through each of the keys and turned the cipher text into key-length chunks. I then looped over this 2D array
 column first to get some decrypted text. I checked if this text was in the document and if not I tried a higher key. 
-###### Decrypted text
+##### Decrypted text
 GHTOFGOINGAWAYFROMHIMDURINGHISABSENCEATTHEMILLBUTSHEFEAREDTHATTHISINSTEADOFBENEFITINGHIMMIGHTBETHEMEANSOFHAMPERINGANDHUMILIATINGHIMYETMOREIFITSHOULDBECOMEKNOWNMEANWHILECLAREWASMEDITATINGVERILYHISTHOUGHTHADBEENUNSUSPENDEDHEWASBECOMINGILLWITHTHINKINGEATENOUTWITHTHINKINGWITHEREDBYTHINKINGSCOURGEDOUTOFALLHISFORMERPULSATINGFLEXUOUSDOMESTICITYHEWALKEDABOUTSAYINGTOHIMSELFWHATSTOBEDONEWHATSTOBEDONEANDBYCHANCESHEOVERHEARDHIMITCAUSEDHERTOBREAKTHERESERVEABOUTTHEIRFUTUREWHICHHADHITHERTOPREVAILEDISUPPOSEYOUARENOTGOINGTOLIVEWITHMELONGAREYOUANGELSHEASKEDTHESUNKCORNERSOFHERMOUTHBETRAYINGHOWPURELYMECHANICALWERETHEMEANSBYWHICHSHERETAINEDTHATEXPRESSIONOFCHASTENEDCALMUPONHERFACEICANNOTHESAIDWITHOUTDESPISINGMYSELFANDWHATISWORSEPERHAPSDESPISINGYOUIMEANOFCOURSECANNOTLIVEWITHYOUINTHEORDINARYSENSEATPRESENTWHATEVERIFEELIDONOTDESPISEYOUANDLETMESPEAKPLAINL
-###### Key
+##### Key
 6
 
 ---
-##### Exercise 6 (5 marks)
-##### Problem
+### Exercise 6 (5 marks)
+#### Problem
 The plaintext comes from tess26.txt and is encoded with a transposition cipher,
 as follows: the plaintext is written row-wise across six columns. The ciphertext is
 formed by reading out successive columns in an arbitrary order (which you must
 figure out to decipher the message). Hint:look for common pairs of letters, such as
 'th'.
 
-##### Solution
+#### Solution
 This exercise was very similar to the fifth one. I broke the text into six chunks and then read each column and
 tried to make a word. If this didn't work I looked for the letters TH going down and matched up as many as I could
-together. I checked again in tess26 and it was there. 
+together. I checked in tess26 and it was there. 
 
-###### Decrypted text
+##### Decrypted text
 RGETENDEREYESNEITHERBLACKNORBLUENORGREYNORVIOLETRATHERALLTHOSESHADESTOGETHERANDAHUNDREDOTHERSWHICHCOULDBESEENIFONELOOKEDINTOTHEIRIRISESSHADEBEHINDSHADETINTBEYONDTINTAROUNDPUPILSTHATHADNOBOTTOMANALMOSTSTANDARDWOMANBUTFORTHESLIGHTINCAUTIOUSNESSOFCHARACTERINHERITEDFROMHERRACEARESOLUTIONWHICHHADSURPRISEDHERSELFHADBROUGHTHERINTOTHEFIELDSTHISWEEKFORTHEFIRSTTIMEDURINGMANYMONTHSAFTERWEARINGANDWASTINGHERPALPITATINGHEARTWITHEVERYENGINEOFREGRETTHATLONELYINEXPERIENCECOULDDEVISECOMMONSENSEHADILLUMINATEDHERSHEFELTTHATSHEWOULDDOWELLTOBEUSEFULAGAINTOTASTEANEWSWEETINDEPENDENCEATANYPRICETHEPASTWASPASTWHATEVERITHADBEENITWASNOMOREATHANDWHATEVERITSCONSEQUENCESTIMEWOULDCLOSEOVERTHEMTHEYWOULDALLINAFEWYEARSBEASIFTHEYHADNEVERBEENANDSHEHERSELFGRASSEDDOWNANDFORGOTTENMEANWHILETHETREESWEREJUSTASGREENASBEFORETHEBIRDSSANGANDTHESUNSHONEASCLEARLYNOWASEVERTHEFAM
 
-###### Key
+##### Key
 234561
 
 ---
-##### Exercise 7 (6 marks)
-##### Problem
+### Exercise 7 (6 marks)
+#### Problem
 The plaintext comes from tess27.txt and is encoded with a general substitution
 cipher, using a randomly chosen mapping from the 27-character alphabet onto
 itself. Note that normally (i.e. except by chance) a vertical bar will be mapped
 onto some other letter of the alphabet.
 
-##### Solution
-I completed the first try but it doesn't look like the space is in the right place. I'd expect to see it every
-6-10 characters but it's very sporadic. Y looks like a great candidate for the space though. 
+#### Solution
+Using frequency analysis I calculated the most likely initial substitutions. These were the punctuation bar "|" and the
+letter "E". I also made the most likely substitutions for the rest of the alphabet but the bar "|" and the letter "E" would
+most likely be correct, the others would need some work done to them.
 
-###### Decrypted text
+I was having troubles replacing all the characters at the same time as replacing them in a for loop sometimes overrides
+other values. **I found a method online that replaced all characters in one go and used that to help me**. Credit for 
+this method goes to [Carl Smith](https://gist.github.com/carlsmith/b2e6ba538ca6f58689b4c18f46fef11c)
 
-###### Key
+Once I had made these substitutions I knew where each word started and stopped thanks to the bar character. I split the
+text into each word and found the most common words in the list. I did the same for Tess27 (the plain text file). I then
+made an assumption that the most common word in the cipher text was the most common word in the plain text, "THE". I was
+reassured that the letter was the because the third letter had already been converted to "E" in the first batch of replacements.
+
+I repeated this process for the most common words until I started to understand some English words. I then made educated
+guesses on what the most likely substitutions would be, using the frequency analysis' and excluding the letters I already
+knew were correct. 
+
+Finally I archived what looked correct and checked that it exists in the file Tess27. It did. 
+
+#### Decrypted text
+HE|WEATHER|BUT|TO|KEEP|THEIR|SHOES|ABOVE|THE|MULCH|OF|THE|BARTON|EACH|GIRL|SAT|DOWN|ON|HER|THREE|LEGGED|STOOL|HER|FACE|SIDEWAYS|HER|RIGHT|CHEEK|RESTING|AGAINST|THE|COW|AND|LOOKED|MUSINGLY|ALONG|THE|ANIMALS|FLANK|AT|TESS|AS|SHE|APPROACHED|THE|MALE|MILKERS|WITH|HAT|BRIMS|TURNED|DOWN|RESTING|FLAT|ON|THEIR|FOREHEADS|AND|GAZING|ON|THE|GROUND|DID|NOT|OBSERVE|HER|ONE|OF|THESE|WAS|A|STURDY|MIDDLE|AGED|MAN|WHOSE|LONG|WHITE|PINNER|WAS|SOMEWHAT|FINER|AND|CLEANER|THAN|THE|WRAPS|OF|THE|OTHERS|AND|WHOSE|JACKET|UNDERNEATH|HAD|A|PRESENTABLE|MARKETING|ASPECT|THE|MASTER|DAIRYMAN|OF|WHOM|SHE|WAS|IN|QUEST|HIS|DOUBLE|CHARACTER|AS|A|WORKING|MILKER|AND|BUTTER|MAKER|HERE|DURING|SIX|DAYS|AND|ON|THE|SEVENTH|AS|A|MAN|IN|SHINING|BROAD|CLOTH|IN|HIS|FAMILY|PEW|AT|CHURCH|BEING|SO|MARKED|AS|TO|HAVE|INSPIRED|A|RHYME|DAIRYMAN|DICK|ALL|THE|WEEK|ON|SUNDAYS|MISTER|
+
+#### Key
+######{'Cipher text value' : 'Plain text value'}
+{'R': '|', 'L': 'E', 'B': 'A', 'Y': 'H', 'D': 'T', 'K': 'N', 'Z': 'S', 'O': 'R', 'J': 'O', 'Q': 'I', '|': 'D', 'E': 'L', 'M': 'M', 'X': 'G', 'T': 'W', 'W': 'C', 'V': 'U', 'H': 'K', 'S': 'B', 'G': 'F', 'F': 'P', 'C': 'Y', 'A': 'V', 'I': 'Z', 'P': 'J', 'N': 'Q', 'U': 'X'}
