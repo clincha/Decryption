@@ -15,7 +15,7 @@ without help from anyone else.
 Brute-force methods are not ruled out; however, you may find the assessment more
 rewarding if you introduce an analytical component into your decryption tactics.
 
-_Extract from assignment brief, written by [Carlos Perez-Delgado](https://www.cs.kent.ac.uk/people/staff/cd472/)
+_Extract from assignment brief, written by [Carlos Perez-Delgado](https://www.cs.kent.ac.uk/people/staff/cd472/)_
 
 ##### Reflection
 - I came into the problem trying to program too much of it straight away
