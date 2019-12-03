@@ -1,0 +1,13 @@
+HE|WEATHER|BUT|TO|KEEP|THEIR|SHOES|ABOVE|THE|MULCH|OF|THE|BARTON|EACH|GIRL|SAT|DOWN|ON|HER|THREE|LEGGED|STOOL|HER|FACE|SIDEWAYS|HER|RIGHT|CHEEK|RESTING|AGAINST|THE|COW|AND|LOOKED|MUSINGLY|ALONG|THE|ANIMALS|FLANK|AT|TESS|AS|SHE|APPROACHED|THE|MALE|MILKERS|WITH|HAT|BRIMS|TURNED|DOWN|RESTING|FLAT|ON|THEIR|FOREHEADS|AND|GAZING|ON|THE|GROUND|DID|NOT|OBSERVE|HER|ONE|OF|THESE|WAS|A|STURDY|MIDDLE|AGED|MAN|WHOSE|LONG|WHITE|PINNER|WAS|SOMEWHAT|FINER|AND|CLEANER|THAN|THE|WRAPS|OF|THE|OTHERS|AND|WHOSE|JACKET|UNDERNEATH|HAD|A|PRESENTABLE|MARKETING|ASPECT|THE|MASTER|DAIRYMAN|OF|WHOM|SHE|WAS|IN|QUEST|HIS|DOUBLE|CHARACTER|AS|A|WORKING|MILKER|AND|BUTTER|MAKER|HERE|DURING|SIX|DAYS|AND|ON|THE|SEVENTH|AS|A|MAN|IN|SHINING|BROAD|CLOTH|IN|HIS|FAMILY|PEW|AT|CHURCH|BEING|SO|MARKED|AS|TO|HAVE|INSPIRED|A|RHYME|DAIRYMAN|DICK|ALL|THE|WEEK|ON|SUNDAYS|MISTER|
+
+code can be found on: https://github.com/clincha/CO634-Decryption
+
+Using frequency analysis I calculated the most likely initial substitutions. These were the punctuation bar "|" and the letter "E". I also made the most likely substitutions for the rest of the alphabet but the bar "|" and the letter "E" would most likely be correct, the others would need some work done to them.
+
+I was having troubles replacing all the characters at the same time as replacing them in a for loop sometimes overrides other values. I found a method online that replaced all characters in one go and used that to help me. Credit for this method goes to Carl Smith
+
+Once I had made these substitutions I knew where each word started and stopped thanks to the bar character. I split the text into each word and found the most common words in the list. I did the same for Tess27 (the plain text file). I then made an assumption that the most common word in the cipher text was the most common word in the plain text, "THE". I was reassured that the letter was the because the third letter had already been converted to "E" in the first batch of replacements.
+
+I repeated this process for the most common words until I started to understand some English words. I then made educated guesses on what the most likely substitutions would be, using the frequency analysis' and excluding the letters I already knew were correct.
+
+Finally I archived what looked correct and checked that it exists in the file Tess27. It did.

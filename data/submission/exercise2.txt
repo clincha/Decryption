@@ -1,0 +1,5 @@
+ANUNCONSCIONABLETIMEFARLONGERT
+
+code can be found on: https://github.com/clincha/CO634-Decryption
+
+Map each letter in the key and the cipher text to their respective number. Minus each letter value from the cipher text with each value in the key, looping to the end of the alphabet (26) when the value reaches the start of the alphabet (0).
